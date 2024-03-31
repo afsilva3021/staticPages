@@ -1,4 +1,4 @@
-function Temp()
+function Temp(props)
 {
     const dynamicDate = new Date();
     const dynamicDateString = dynamicDate.toUTCString();

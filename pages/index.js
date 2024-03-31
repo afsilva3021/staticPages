@@ -1,17 +1,23 @@
 import Link from 'next/link';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import OffcanvasExample from '../templates/navbar'
+
+
 
 function Home() {
-    return (
-
+    return ([
         <div>
-            <h1>Home</h1>
-
-            <Link href="./sobre">
-                Acessar Pagina Sobre
-            </Link>
-
-        </div>
-    )
+            <OffcanvasExample></OffcanvasExample>
+        </div>,
+        <Container>
+            <Row>
+                <h1>Home</h1>
+            </Row>
+        </Container>
+    ])
 }
 
 
