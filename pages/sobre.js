@@ -1,11 +1,13 @@
-function Sobre() 
-{
-    return (
+import Link from 'next/link';
 
-        <div>
+function Sobre() {
+    return (<div>
+
+        <Link href="/">
             <h1>Home</h1>
-            <a href="/">Acessar Pagina Home</a>
-        </div>
+            <a>Acessar Pagina Home</a>
+        </Link>
+    </div>
     )
 }
 

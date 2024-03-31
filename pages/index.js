@@ -1,5 +1,5 @@
-import { useState } from 'react';
-
+// import { useState } from 'react';
+import Link from 'next/link';
 
 function Home() 
 {
@@ -7,7 +7,11 @@ function Home()
 
         <div>
             <h1>Home</h1>
-            <a href="/sobre">Acessar Pagina Sobre</a>
+
+            <Link href="/sobre">
+                <a>Acessar Pagina Sobre</a>
+            </Link>
+        
         </div>
     )
 }
