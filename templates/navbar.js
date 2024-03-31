@@ -5,15 +5,14 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import Link from 'next/link';
 
-function OffcanvasExample() {
+
+function OffcanvasNavbar() {
     return (
         <>
             {[false].map((expand) => (
-                <Navbar key={expand} bg="dark" data-bs-theme="dark" expand={expand} >
+                <Navbar className='p-1' key={expand} bg="dark" data-bs-theme="dark" expand={expand} >
                     <Container fluid>
-
                         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
                         <Navbar.Offcanvas bg="dark" data-bs-theme="dark"
                             id={`offcanvasNavbar-expand-${expand}`}
@@ -22,7 +21,7 @@ function OffcanvasExample() {
                         >
                             <Offcanvas.Header closeButton>
                                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                                    Offcanvas
+                                    Menu
                                 </Offcanvas.Title>
                             </Offcanvas.Header>
                             <Offcanvas.Body>
@@ -48,11 +47,11 @@ function OffcanvasExample() {
                                 <Form className="d-flex">
                                     <Form.Control
                                         type="search"
-                                        placeholder="Search"
+                                        placeholder="Buscar dados"
                                         className="me-2"
                                         aria-label="Search"
                                     />
-                                    <Button variant="outline-success">Search</Button>
+                                    <Button variant="outline-warning">Buscar</Button>
                                 </Form>
                             </Offcanvas.Body>
                         </Navbar.Offcanvas>
@@ -65,4 +64,4 @@ function OffcanvasExample() {
 }
 
 
-export default OffcanvasExample
+export default OffcanvasNavbar

@@ -1,16 +1,15 @@
-import Link from 'next/link';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import OffcanvasExample from '../templates/navbar'
+import OffcanvasNavbar from '../templates/navbar'
 
 
 
 function Home() {
     return ([
         <div>
-            <OffcanvasExample></OffcanvasExample>
+            <OffcanvasNavbar></OffcanvasNavbar>
         </div>,
         <Container>
             <Row>
