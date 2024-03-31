@@ -1,8 +1,7 @@
 // import { useState } from 'react';
 import Link from 'next/link';
 
-function Home() 
-{
+function Home() {
     return (
 
         <div>
@@ -11,7 +10,7 @@ function Home()
             <Link href="/sobre">
                 <a>Acessar Pagina Sobre</a>
             </Link>
-        
+
         </div>
     )
 }
