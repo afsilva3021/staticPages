@@ -1,7 +1,7 @@
 function Temp()
 {
     const dynamicDate = new Date();
-    const dynamicDateString = dynamicDate.toGMTSting();
+    const dynamicDateString = dynamicDate.toUTCString();
 
 
     return (
