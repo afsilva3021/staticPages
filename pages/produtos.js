@@ -4,13 +4,13 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import CollapsibleNavbar from "../templates/navbar";
 
-function Home() {
+function Produtos() {
   return [
     <div>
       <CollapsibleNavbar />
     </div>,
     <Container className="container-lx d-flex justify-content-center m-5">
-      <h1>Home</h1>
+      <h1>Produtos</h1>
       <Row>
         <Col></Col>
       </Row>
@@ -18,4 +18,4 @@ function Home() {
   ];
 }
 
-export default Home;
+export default Produtos;
