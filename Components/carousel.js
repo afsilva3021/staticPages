@@ -18,7 +18,7 @@ function DarkVariantExample() {
           }}
         />
         <Carousel.Caption>
-          <h5 className='text-white'>Temos os melhores Iphone</h5>
+          <h3 className='text-white'>Temos os melhores Iphone</h3>
           <p className='text-white'>Iphone 15 pro max, Iphone 14 pro max, Iphone 13 pro</p>
         </Carousel.Caption>
       </Carousel.Item>

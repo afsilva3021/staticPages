@@ -5,25 +5,25 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import React from "react";
 
 
-function CollapsibleNavbar() {
-  
-  const logo = "/images/logo.png";
+export default function CollapsibleNavbar() {
+
+  const logo = "";
 
   return (
     <Navbar
       collapseOnSelect
-      className="opacity-75"
+      className="opacity-100"
       expand="lg"
       bg="dark"
       data-bs-theme="dark">
       <Container>
         <Navbar.Brand href="/">
-        <img src={logo} style={{width: 90, height: 85}}/>
-      </Navbar.Brand>
+          <img src="/images/logo.webp" style={{ width: 90, height: 60 }} />
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-          <Nav.Link href="/">Inicio</Nav.Link>
+            <Nav.Link href="/">Inicio</Nav.Link>
             <Nav.Link href="#features">Promoções</Nav.Link>
             <Nav.Link href="/produtos">Produtos</Nav.Link>
             <NavDropdown title="Categoria" id="collapsible-nav-dropdown">
@@ -40,9 +40,9 @@ function CollapsibleNavbar() {
             </NavDropdown>
           </Nav>
           <Nav>
-            <Nav.Link href="/sobre"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312" />
-            </svg> Carrinho
+            <Nav.Link href="/sobre"><svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+              <path fill-rule="evenodd" d="M14 7h-4v3a1 1 0 0 1-2 0V7H6a1 1 0 0 0-.997.923l-.917 11.924A2 2 0 0 0 6.08 22h11.84a2 2 0 0 0 1.994-2.153l-.917-11.924A1 1 0 0 0 18 7h-2v3a1 1 0 1 1-2 0V7Zm-2-3a2 2 0 0 0-2 2v1H8V6a4 4 0 0 1 8 0v1h-2V6a2 2 0 0 0-2-2Z" clip-rule="evenodd" />
+            </svg>
             </Nav.Link>
             <Nav.Link eventKey={2} bg="dark" data-bs-theme="dark">
               <svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -56,4 +56,4 @@ function CollapsibleNavbar() {
   );
 }
 
-export default CollapsibleNavbar;
+
