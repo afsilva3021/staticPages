@@ -1,13 +1,13 @@
 import { AutoComplete } from 'antd';
 import Carousel from 'react-bootstrap/Carousel';
 
-function DarkVariantExample() {
+function DarkVariantCarousel() {
   return (
     <Carousel data-bs-theme="dark">
       <Carousel.Item>
         <img
           className="d-flex justify-content-center w-50"
-          src=" /images/iphone-wallpaper.webp"
+          src=" /images/apple-iphone-13-pro-max-1.jpg"
           alt="First slide"
           style={{
             margin: 'auto',
@@ -17,37 +17,49 @@ function DarkVariantExample() {
             maxHeight: 'auto'
           }}
         />
-        <Carousel.Caption>
-          <h3 className='text-white'>Temos os melhores Iphone</h3>
-          <p className='text-white'>Iphone 15 pro max, Iphone 14 pro max, Iphone 13 pro</p>
+        <Carousel.Caption className='text-dark bg-white opacity-75'>
+          <h3 className='text-dark mb-1 opacity-100'>Iphone 13 Pro Max</h3>
+          <p className='text-dark opacity-100 mb-5'>Temos todos os modelos e Cores</p>
+        </Carousel.Caption>
+      </Carousel.Item >
+      <Carousel.Item>
+        <img
+          className="d-flex justify-content-center w-50"
+          src="/images/iphone-wallpaper.webp"
+          alt="First slide"
+          style={{
+            margin: 'auto',
+            width: 900,
+            height: 600,
+            maxWidth: 'auto',
+            maxHeight: 'auto'
+          }}
+        />
+        <Carousel.Caption className='text-dark bg-white opacity-75'>
+          <h3 className='text-dark opacity-100 mt-1'>Iphone 15 Pro</h3>
+          <p className='text-dark opacity-100 mb-5'>Iphone 15 pro aquela cor que você tanto quer</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=Second slide&bg=eee"
-          alt="Second slide"
+          className="d-flex justify-content-center w-50"
+          src="/images/AppleWatch.jpeg"
+          alt="First slide"
+          style={{
+            margin: 'auto',
+            width: 900,
+            height: 600,
+            maxWidth: 'auto',
+            maxHeight: 'auto'
+          }}
         />
-        <Carousel.Caption>
-          <h5>Second slide label</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=Third slide&bg=e5e5e5"
-          alt="Third slide"
-        />
-        <Carousel.Caption>
-          <h5>Third slide label</h5>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
+        <Carousel.Caption className='text-dark bg-white opacity-75'>
+          <h3 className='text-dark opacity-100 mt-1'>Os Melhores apple watch</h3>
+          <p className='text-dark mb-5 opacity-100'>Aqui você encontra o apple watch que combina com você.</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
   );
 }
 
-export default DarkVariantExample;
+export default DarkVariantCarousel;
