@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import CollapsibleNavbar from "../Components/navbar";
-import Container from 'react-bootstrap/Container'
+import CollapsibleNavbar from "../Components/CollapsibleNavbar";
+import Container from 'react-bootstrap/Container';
 import { Row } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
 
